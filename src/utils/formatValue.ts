@@ -1,8 +1,7 @@
-const formatDate = (date: string): string => {
-  const parsedDate = date.slice(0, 10).split('-');
-  const [year, month, day] = parsedDate;
-  const finalDate = [day, month, year].join('/');
-  return finalDate;
-};
+const formatValue = (value: number): string =>
+  Intl.NumberFormat('pt-BR',{
+    style: 'currency',
+    currency: 'BRL',
+  }).format(value);
 
-export default formatDate;
+export default formatValue;
