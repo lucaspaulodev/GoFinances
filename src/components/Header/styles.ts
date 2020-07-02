@@ -23,6 +23,9 @@ export const Container = styled.div<ContainerProps>`
         font-size: 16px;
         transition: opacity 0.2s;
 
+        border-bottom: ${({ title }) =>
+          title === 'dashboard' ? '2px solid #FF872C' : '2px solid #FF872C'};
+
         & + a {
           margin-left: 32px;
         }

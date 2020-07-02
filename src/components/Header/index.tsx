@@ -8,6 +8,7 @@ import Logo from '../../assets/logo.svg';
 
 interface HeaderProps {
   size?: 'small' | 'large';
+  title?: 'dashboard' | 'import';
 }
 
 const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (

@@ -62,7 +62,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <Header title="dashboard" />
       <Container>
         <CardContainer>
           <Card>
